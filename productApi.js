@@ -26,7 +26,7 @@ skillsload();
  */
 const getDevelopers=()=>{
   devs_data;
-  axios.get('http://my-json-server.typicode.com/jabed366/devs/db').then(res=>{
+  axios.get('http://my-json-server.typicode.com/jabed366/devs/developers').then(res=>{
     let all_devs_data='';
     res.data.map((dev,index)=>{
     all_devs_data+=`
