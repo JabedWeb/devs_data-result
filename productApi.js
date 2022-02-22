@@ -82,7 +82,7 @@ function allDeveloper(id){
   let skill=document.querySelector('#eskill_list');
   let epreview=document.querySelector('#epreview');
   let edit_id=document.querySelector('#edit_id');
-  axios.get(`http://localhost:1010/developers/${id}`).then(res=>{
+  axios.get(`http://my-json-server.typicode.com/jabed366/devs/developers/${id}`).then(res=>{
     name.value=res.data.name;
     email.value=res.data.email;
     photo.value=res.data.photo;
